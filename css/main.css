@@ -301,7 +301,7 @@ ul li {
 .banner {
 	background-color: #041C5A;
 	min-height: 250px;
-	background: url("../images/atxbanner.jpg") no-repeat center fixed;
+	background: url("../images/atxbanner.jpg");
     background-attachment: fixed
 }
 .banner-text {
