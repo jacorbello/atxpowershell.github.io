@@ -300,7 +300,7 @@ ul li {
 .banner {
 	background-color: #65349c;
 	min-height: 750px;
-	background-image: url("images/atxpowershell-banner.jpg");
+	background-image: url("../images/atxpowershell-banner.jpg");
 }
 .banner-text {
 	padding-top: 28%;
