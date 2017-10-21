@@ -299,10 +299,10 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .banner {
-	background-color: #65349c;
-	min-height: 500px;
-	background: url("../images/atxbanner.jpg")   ;
-
+	background-color: #041C5A;
+	min-height: 250px;
+	background: url("../images/atxbanner.jpg") no-repeat center fixed;
+    background-attachment: fixed
 }
 .banner-text {
 	padding-top: 28%;
