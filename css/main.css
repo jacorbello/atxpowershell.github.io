@@ -341,8 +341,7 @@ ul li {
   box-shadow: 0 0 0 1px #fff;
 
   overflow: hidden;
-  position: relative;
-  visibility: hidden; }
+  position: relative; }
   .work img
   {
 	width:100%;
@@ -621,3 +620,4 @@ margin-top:50px;
     font-size: 17px;
     font-weight: 700;
 }
+
