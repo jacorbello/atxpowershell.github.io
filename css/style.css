@@ -1,0 +1,510 @@
+body {
+    margin: auto 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* NAV */
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+    font-family: serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: .5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover {
+    text-shadow: #cf0404;
+    box-shadow: #cf0404;
+}
+
+/* HEADER */
+
+.page-header {
+    padding-right: 5em;
+}
+
+/* SEARCHBOX */
+
+.button_box2 {
+    padding-top: 3%;
+    height: 100%;
+}
+
+/*-------------------------------------*/
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/*-------------------------------------*/
+
+.form-wrapper-2 {
+    width: 700px;
+    padding: 0;
+    background: #555;
+}
+
+.form-wrapper-2 input {
+    width: 580px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'Raleway', sans-serif;
+    border: 0;
+    background: #eee;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper-2 input:focus {
+    outline: 0;
+    background: #fff;
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
+}
+
+.form-wrapper-2 input::-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper-2 input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper-2 input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper-2 button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background: #249173;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.form-wrapper-2 button:hover {
+    background: #00674B;
+}
+
+.form-wrapper-2 button:active,
+.form-wrapper-2 button:focus {
+    background: #c42f2f;
+}
+
+.form-wrapper-2 button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #249173 transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.form-wrapper-2 button:hover:before {
+    border-right-color: #00674B;
+}
+
+.form-wrapper-2 button:focus:before {
+    border-right-color: #c42f2f;
+}
+
+.form-wrapper-2 button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* GRID */
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+
+.class {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.box>img {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.textbox {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+}
+
+.textbox>p {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: .35em;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    background-color: #444;
+    padding: 10px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+/* COVER */
+
+.headerpad {
+    width: 100%;
+    height: 66px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /* background-color: #444; */
+}
+
+.long {
+    height: 80vh;
+}
+
+.containerHide {
+    display: none;
+}
+
+.cover {
+    height: 80%;
+    transition: 1s;
+}
+
+.under {
+    position: absolute;
+    z-index: 0;
+    max-height: 55vh;
+    max-width: 100%;
+}
+
+.over {
+    position: relative;
+    z-index: 2;
+    max-height: 55vh;
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 5s;
+    /* Internet Explorer */
+    -o-animation: fadein 5s;
+    /* Opera < 12.1 */
+    animation: fadein 5s;
+}
+
+.list {
+    display: flex;
+
+}
+
+.list > p {
+    font-family: serif;
+}
+
+.listbox {
+    position: relative;
+    background-color: #444;
+    padding: 10px;
+    margin: 20px;
+    transition: 1s;
+    max-width: 15vw;
+}
+
+.listbox:hover {
+    transform: scale(1.1);
+}
+
+.listbox > img {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    max-width: 80%;
+}
+
+/* FOOTER */
+
+.footerpad {
+    width: 100%;
+    height: 37px;
+}
+
+footer {
+    margin: 0;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>span {
+    margin: 0;
+    padding-right: 2%;
+    font-size: .4em;
+}
+
+.zone {
+    cursor: pointer;
+    color: #FFF;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+    background: #00674B;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00674B 0%, #249173 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00674B), color-stop(100%, #249173));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00674B 0%, #249173 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00674B 0%, #249173 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00674B 0%, #249173 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #00674B 0%, #249173 100%);
+    /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+    background: #C655BE;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C655BE), color-stop(100%, #cf0404));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%, #cf0404 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%, #cf0404 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%, #cf0404 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%, #cf0404 100%);
+    /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+    background: #F3AAAA;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F3AAAA), color-stop(100%, #febf04));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%, #febf04 100%);
+    /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue {
+    background: #041335;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #041335 0%, #0A328D 44%, #092668 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #041335), color-stop(44%, #0A328D), color-stop(100%, #092668));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #041335 0%, #0A328D 44%, #092668 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #041335 0%, #0A328D 44%, #092668 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #041335 0%, #0A328D 44%, #092668 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #041335 0%, #0A328D 44%, #092668 100%);
+    /* W3C */
+}
+
+/***********************************************************************
+ *  Black Background
+ **********************************************************************/
+.black {
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #464646 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #464646));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #000000 0%, #464646 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #000000 0%, #464646 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #000000 0%, #464646 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #000000 0%, #464646 100%);
+    /* W3C */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* custom */
+
+#storeMap {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #E9E5DC;
+}
+
+
+#storeInfo {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}

@@ -1,63 +1,36 @@
-$(document).ready(function() {
-	// Header Scroll
-	$(window).on('scroll', function() {
-		var scroll = $(window).scrollTop();
+function showContent(i) {
+    var divs = [
+        "mainWindow",
+        "eventsDiv",
+        "searchDiv",
+        "serviceConnectDiv",
+        "projectsDiv",
+        "serviceStatusDiv",
+        "resourcesDiv",
+    ]
+    
 
-		if (scroll >= 50) {
-			$('#header').addClass('fixed');
-		} else {
-			$('#header').removeClass('fixed');
-		}
-	});
+    // check to see if it's already showing, if so - hide it and show the logo
+    if (document.getElementById(i).classList.contains("container")) {
+        divs.forEach(function(item, index, arr) {
+            if (arr[index] === "mainWindow") {
+                document.getElementById(arr[index]).classList.replace("containerHide","container");
+                document.getElementById(arr[index]).classList.add("zone");
+            } else {
+                document.getElementById(arr[index]).classList.replace("container","containerHide");
+                document.getElementById(arr[index]).classList.remove("zone");
+            }
+        });
+    } else {
+        divs.forEach(function(item, index, arr) {
+            if (arr[index] === i) {
+                document.getElementById(i).classList.replace("containerHide","container");
+                document.getElementById(i).classList.add("zone");
+            } else {
+                document.getElementById(arr[index]).classList.replace("container","containerHide");
+                document.getElementById(arr[index]).classList.remove("zone");
+            }
+        });
+    }
 
-	// Waypoints
-	$('.work').waypoint(function() {
-		$('.work').addClass('animated fadeIn');
-	}, {
-		offset: '75%'
-	});
-	$('.download').waypoint(function() {
-		$('.download .btn').addClass('animated tada');
-	}, {
-		offset: '75%'
-	});
-
-	// Fancybox
-	$('.work-box').fancybox();
-
-	
-	// Page Scroll
-	var sections = $('section')
-		nav = $('nav[role="navigation"]');
-
-	$(window).on('scroll', function () {
-	  	var cur_pos = $(this).scrollTop();
-	  	sections.each(function() {
-	    	var top = $(this).offset().top - 76
-	        	bottom = top + $(this).outerHeight();
-	    	if (cur_pos >= top && cur_pos <= bottom) {
-	      		nav.find('a').removeClass('active');
-	      		nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-	    	}
-	  	});
-	});
-	nav.find('a').on('click', function () {
-	  	var $el = $(this)
-	    	id = $el.attr('href');
-		$('html, body').animate({
-			scrollTop: $(id).offset().top - 75
-		}, 500);
-	  return false;
-	});
-
-	// Mobile Navigation
-	$('.nav-toggle').on('click', function() {
-		$(this).toggleClass('close-nav');
-		nav.toggleClass('open');
-		return false;
-	});	
-	nav.find('a').on('click', function() {
-		$('.nav-toggle').toggleClass('close-nav');
-		nav.toggleClass('open');
-	});
-});
+}
