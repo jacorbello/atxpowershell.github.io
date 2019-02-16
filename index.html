@@ -22,15 +22,69 @@
         <img class="cover over" src=".\images\atxpowershell.jpg">
     </div>
 
-    <div class="containerHide zone long" id="eventsDiv">
-        <span>eventsDiv</span>
+    <div class="containerHide zone long blue" id="eventsDiv">
+        <!-- <iframe width="225" height="570" src="http://meetu.ps/3jRbK3" frameborder="0"></iframe> -->
     </div>
 
-    <div class="containerHide zone long" id="projectsDiv">
-        <span>projectsDiv</span>
+    <div class="containerHide zone long blue" id="projectsDiv">
+        <div class="list">
+            <div class="listbox" onclick="window.open('https://github.com/ATXPowerShell', '_blank');">
+                <img src=".\images\github.png">
+                <div class="textbox">
+                    <p>ATXPowerShell Github</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="containerHide zone long" id="resourcesDiv">
+    <div class="containerHide zone long blue" id="connectDiv">
+        <div class="list">
+            <div class="listbox" onclick="window.open('https://twitter.com/atxpowershell', '_blank');">
+                <img src=".\images\atxpowershell-twitter.jpg">
+                <div class="textbox">
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://www.linkedin.com/company/atxpowershell/', '_blank');">
+                <img src=".\images\atxpowershell-linkedin.jpg">
+                <div class="textbox">
+                    <p>LinkedIn</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://plus.google.com/+ATXPowerShell', '_blank');">
+                <img src=".\images\atxpowershell-googleplus.jpg">
+                <div class="textbox">
+                    <p>Google Plus</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://www.facebook.com/atxpowershell', '_blank');">
+                <img src=".\images\atxpowershell-facebook.jpg">
+                <div class="textbox">
+                    <p>Facebook</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://github.com/ATXPowerShell', '_blank');">
+                <img src=".\images\atxpowershell-github.jpg">
+                <div class="textbox">
+                    <p>Github</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://youtube.com/ATXPowerShell', '_blank');">
+                <img src=".\images\atxpowershell-youtube.jpg">
+                <div class="textbox">
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <div class="listbox" onclick="window.open('https://www.meetup.com/Austin-PowerShell/', '_blank');">
+                <img src=".\images\atxpowershell-meetup.jpg">
+                <div class="textbox">
+                    <p>MeetUp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerHide zone long blue" id="resourcesDiv">
         <div class="list">
             <div class="listbox" onclick="window.open('https://powershell.org', '_blank');">
                 <img src=".\images\ps_org.png">
@@ -39,18 +93,18 @@
                 </div>
             </div>
             <div class="listbox" onclick="window.open('https://microsoft.com/powershell', '_blank');">
-                <img src=".\images\ms.png">
+                <img src=".\images\ms1.png">
                 <div class="textbox">
                     <p>Official Microsoft PowerShell</p>
                 </div>
             </div>
             <div class="listbox" onclick="window.open('https://blogs.msdn.microsoft.com/powershell/', '_blank');">
-                <img src=".\images\ms.png">
+                <img src=".\images\ms1.png">
                 <div class="textbox">
                     <p>PowerShell Team Blog</p>
                 </div>
             </div>
-        </div>>
+        </div>
     </div>
 
     <!-- Grid Section -->
@@ -62,16 +116,22 @@
                 <p>Resources</p>
             </div>
         </div>
-        <div class="box zone" onclick="showContent('eventsDiv')">
+        <div class="box zone" onclick="showContent('eventsDiv'); getMeetup()">
             <img src=".\images\calendar.png">
             <div class="textbox">
                 <p>Events</p>
             </div>
         </div>
         <div class="box zone" onclick="showContent('projectsDiv')">
-            <img src=".\res\img\projects1.png">
+            <img src=".\images\projects1.png">
             <div class="textbox">
                 <p>Current Projects</p>
+            </div>
+        </div>
+        <div class="box zone" onclick="showContent('connectDiv')">
+            <img src=".\images\connect1.png">
+            <div class="textbox">
+                <p>Connect with us</p>
             </div>
         </div>
         <!--         
@@ -83,7 +143,8 @@
     <div class="footerpad">
         <!-- Used to pad the above container so the footer doesn't overlap -->
     </div>
-    <footer class="zone black"><span>&#169; ATXPowerShell - Jeremy Corbello</span></footer>
+    <footer class="zone black"><span>&#169; ATXPowerShell - <a href="https://www.jeremycorbello.com" target="_blank">Jeremy
+                Corbello</a></span></footer>
     <script type="text/javascript" src=".\js\main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>

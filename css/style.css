@@ -201,9 +201,10 @@ a:hover {
 
 .textbox>p {
     margin: 0;
+    margin-bottom: 5px;
     padding: 0;
     text-transform: uppercase;
-    font-size: .35em;
+    font-size: .4em;
     text-align: center;
 }
 
@@ -276,8 +277,9 @@ a:hover {
 
 }
 
-.list > p {
+.listbox > p {
     font-family: serif;
+    color: green;
 }
 
 .listbox {
@@ -294,10 +296,10 @@ a:hover {
 }
 
 .listbox > img {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 5%;
-    max-width: 80%;
+    max-width: 70%;
 }
 
 /* FOOTER */
@@ -435,6 +437,26 @@ footer>span {
     background: -ms-linear-gradient(top, #000000 0%, #464646 100%);
     /* IE10+ */
     background: linear-gradient(top, #000000 0%, #464646 100%);
+    /* W3C */
+}
+
+/***********************************************************************
+ *  lightblue Background
+ **********************************************************************/
+.lightblue {
+    background: #3351F3;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0429F1 0%, #A1AFF7 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0429F1), color-stop(100%, #A1AFF7));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0429F1 0%, #A1AFF7 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0429F1 0%, #A1AFF7 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0429F1 0%, #A1AFF7 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #0429F1 0%, #A1AFF7 100%);
     /* W3C */
 }
 
