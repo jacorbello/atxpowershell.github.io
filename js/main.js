@@ -2,10 +2,7 @@ function showContent(i) {
     var divs = [
         "mainWindow",
         "eventsDiv",
-        "searchDiv",
-        "serviceConnectDiv",
         "projectsDiv",
-        "serviceStatusDiv",
         "resourcesDiv",
     ]
     
