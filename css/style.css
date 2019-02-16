@@ -184,9 +184,24 @@ a:hover {
     padding-bottom: 40px;
 }
 
-.box>img {
-    width: 100%;
-    padding-bottom: 40px;
+.box > img {
+    max-width: 15vw;
+    padding-bottom: 10%;
+    vertical-align: middle;
+    /* max-height: 75%; */
+}
+
+#spin {
+    animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
 }
 
 .textbox {
@@ -274,7 +289,9 @@ a:hover {
 
 .list {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .listbox > p {
@@ -296,10 +313,10 @@ a:hover {
 }
 
 .listbox > img {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 5%;
-    max-width: 70%;
+    padding-bottom: 15%;
+    max-width: 10vw;
+    max-height: 75%;
+    vertical-align: middle;
 }
 
 /* FOOTER */
