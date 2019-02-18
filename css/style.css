@@ -184,11 +184,27 @@ a:hover {
     padding-bottom: 40px;
 }
 
+.box {
+    position: relative;
+    background-color: #444;
+    padding: 10px;
+    margin: 20px;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+}
+
 .box > img {
-    max-width: 15vw;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 80%;
     padding-bottom: 10%;
     vertical-align: middle;
-    /* max-height: 75%; */
+}
+
+.box:hover {
+    transform: scale(1.1);
 }
 
 #spin {
@@ -221,18 +237,6 @@ a:hover {
     text-transform: uppercase;
     font-size: .4em;
     text-align: center;
-}
-
-.box {
-    position: relative;
-    background-color: #444;
-    padding: 10px;
-    margin: 20px;
-    transition: 1s;
-}
-
-.box:hover {
-    transform: scale(1.1);
 }
 
 /* COVER */
@@ -313,7 +317,7 @@ a:hover {
 }
 
 .listbox > img {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
     max-width: 10vw;
     max-height: 75%;
     vertical-align: middle;
