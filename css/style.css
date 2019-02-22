@@ -10,6 +10,7 @@ body {
     font-size: 0.7em;
     margin: 0;
     font-family: serif;
+    padding: 0;
 }
 
 .sticky {
@@ -43,6 +44,14 @@ a {
 a:hover {
     text-shadow: #cf0404;
     box-shadow: #cf0404;
+}
+
+.tiny-logo {
+    /* margin: auto; */
+}
+
+.tiny-logo img {
+    max-height: 30px;
 }
 
 /* HEADER */
@@ -179,16 +188,53 @@ a:hover {
     grid-gap: 20px;
 }
 
+.grid-wrapper-mainDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-gap: 20px;
+    width: 80%;
+}
+
 .class {
     width: 100%;
     padding-bottom: 40px;
 }
 
-.box > img {
-    max-width: 15vw;
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    margin: 20px;
+    transition: 1s;
+    padding-top: 2%;
+}
+
+.box-mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    margin: 20px;
+    transition: 1s;
+}
+
+.box-mainDiv>img {
+    max-width: 75%;
     padding-bottom: 10%;
-    vertical-align: middle;
-    /* max-height: 75%; */
+    place-self: center;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box>img {
+    max-width: 75%;
+    padding-bottom: 10%;
+    place-self: center;
 }
 
 #spin {
@@ -197,42 +243,30 @@ a:hover {
 
 @keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
+
     to {
-            -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
     }
 }
 
 .textbox {
     width: 100%;
-    position: absolute;
     bottom: 0;
     left: 0;
     padding: 0;
     margin: 0;
     transition: 1s;
+    align-self: flex-end;
 }
 
 .textbox>p {
     margin: 0;
-    margin-bottom: 5px;
     padding: 0;
     text-transform: uppercase;
     font-size: .4em;
     text-align: center;
-}
-
-.box {
-    position: relative;
-    background-color: #444;
-    padding: 10px;
-    margin: 20px;
-    transition: 1s;
-}
-
-.box:hover {
-    transform: scale(1.1);
 }
 
 /* COVER */
@@ -291,12 +325,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
-.listbox > p {
-    font-family: serif;
-    color: green;
+    align-content: center;
 }
 
 .listbox {
@@ -308,15 +337,22 @@ a:hover {
     max-width: 15vw;
 }
 
+.listbox>p {
+    font-family: serif;
+    color: green;
+    justify-content: center;
+    align-content: center;
+}
+
 .listbox:hover {
     transform: scale(1.1);
 }
 
-.listbox > img {
+.listbox>img {
     padding-bottom: 15%;
     max-width: 10vw;
     max-height: 75%;
-    vertical-align: middle;
+    place-self: center;
 }
 
 /* FOOTER */
