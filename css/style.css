@@ -348,8 +348,13 @@ a:hover {
     transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 .listbox>img {
     padding-bottom: 15%;
+=======
+.listbox > img {
+    padding-bottom: 20%;
+>>>>>>> ec91b439815921af929e37c9768f581bca0cd6dc
     max-width: 10vw;
     max-height: 75%;
     place-self: center;
