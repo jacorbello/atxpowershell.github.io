@@ -1,148 +1,189 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<HTML lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Austin Powershell User Group : ATXPowerShell</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>ATX PowerShell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body>
-<!-- header section -->
-<section class="banner" role="banner">
-  <header id="header"> 
-    <!-- navigation section  -->
-    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt="ATXPowerShell"></a>
-      
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-    <!-- navigation section  --> 
-  </header>
-  
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>Austin PowerShell Users Group</h1>
-        <p>@ATXPowerShell</p>
-        <!-- banner text --> 
-      </div>
+<body class="bg-dark">
+    <div class="container-fluid p-0">
+        <div class="jumbotron jumbotron-fluid jumbotron-bg mb-0">
+            <div class="container text-center text-white">
+                <div class="card mb-3 bg-transparent">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="src/img/logo.png" alt="ATXPowerShell Logo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 class="card-title text-white">Austin Powershell Users Group</h1>
+                                <p class="card-text">@ATXPowerShell</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-<!-- header section --> 
-<!-- description text section -->
-<section id="descripton" class="section descripton">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 text-center">
-      <p>The Austin PowerShell User Group is a free monthly meeting for IT Professionals, Developers, Engineers, Systems Administrators, and anyone interested in learning or sharing information about Microsoft PowerShell. We usually host meetings first Thursday of the month at the Microsoft Store in The Domain</p>
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
+                    aria-controls="nav-about" aria-selected="true">About Us</a>
+                <a class="nav-item nav-link" id="nav-connect-tab" data-toggle="tab" href="#nav-connect" role="tab"
+                    aria-controls="nav-connect" aria-selected="false">Connect</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="container text-center text-white">
+                    <blockquote class="blockquote">
+                        <p>The Austin PowerShell User Group is a free monthly meeting for IT Professionals, Developers,
+                            Engineers,
+                            Systems Administrators, and anyone interested in learning or sharing information about
+                            Microsoft
+                            PowerShell. We usually host meetings first Thursday of the month at the Microsoft Store in
+                            The
+                            Domain
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-connect" role="tabpanel" aria-labelledby="nav-connect-tab">
+                <div class="card-deck py-3">
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-twitter.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Twitter">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Twitter</h5>
+                            <p class="card-text">Follow the ATX Powershell User Group on Twitter!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://twitter.com/atxpowershell" target="_blank">Follow
+                                us on
+                                Twitter</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-meetup.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Meetup">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Meetup</h5>
+                            <p class="card-text">Join the ATXPowerShell group in person or online at our monthly
+                                meetups!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://www.meetup.com/Austin-PowerShell/"
+                                target="_blank">Join us
+                                at a Meetup</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-linkedin.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="LinkedIn">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">LinkedIn</h5>
+                            <p class="card-text">Connect with the ATXPowerShell group on LinkedIn!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://www.linkedin.com/company/atxpowershell/"
+                                target="_blank">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-googleplus.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Google Plus">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Plus</h5>
+                            <p class="card-text">Follow us on Google Plus to keep up with our upcoming events!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://plus.google.com/+ATXPowerShell"
+                                target="_blank">Follow us
+                                on Google Plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck py-3">
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-facebook.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Facebook">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Facebook</h5>
+                            <p class="card-text">Follow ATXPowerShell on Facebook to see what we're up to and view
+                                images of our
+                                events!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://facebook.com/atxpowershell" target="_blank">Follow
+                                us on
+                                Facebook</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-github.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Github">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Github</h5>
+                            <p class="card-text">Check out our repos and contribute on Github!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://github.com/ATXPowerShell" target="_blank">Fork on
+                                Github</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-youtube.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="Youtube">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Youtube</h5>
+                            <p class="card-text">See some of our archived presentations via Youtube</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-primary" href="https://youtube.com/ATXPowerShell" target="_blank">Watch on
+                                Youtube</a>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <img src="src/img/atxpowershell-feed.png"
+                            class="card-img-top img-thumbnail bg-transparent border-0" alt="RSS">
+                        <hr class="my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">RSS</h5>
+                            <p class="card-text">RSS Feeds coming soon!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a class="btn btn-secondary" href="https://atxpowershell.github.io" target="_self">Coming
+                                Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-<!-- description text section --> 
-<!-- portfolio section -->
-<section id="works" class="works section no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="col-lg-1 col-md-1 col-sm-1 work">
-      </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work">
-      </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://twitter.com/atxpowershell" class="work-box"> <img src="images/atxpowershell-twitter.jpg" width=5% height=5% alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Follow us on Twitter</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://www.linkedin.com/company/atxpowershell/" class="work-box"> <img src="images/atxpowershell-linkedin.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Join our LinkedIn group</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://plus.google.com/+ATXPowerShell" class="work-box"> <img src="images/atxpowershell-googleplus.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Follow us on Google+</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://facebook.com/atxpowershell" class="work-box"> <img src="images/atxpowershell-facebook.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Like our Facebook Page</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://github.com/ATXPowerShell" class="work-box"> <img src="images/atxpowershell-github.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Join us on GitHub</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://youtube.com/ATXPowerShell" class="work-box"> <img src="images/atxpowershell-youtube.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Subscribe to our YouTube channel</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="https://www.meetup.com/Austin-PowerShell/" class="work-box"> <img src="images/atxpowershell-meetup.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>Join our Meetup</p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work"> <a href="" class="work-box"> <img src="images/atxpowershell-feed.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p>RSS feeds coming soon</p>
-          </div>
-        </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work">
-        </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 work">
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
-  </div>
-</section>
-<!-- portfolio section --> 
 
-
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
-  
-
-  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
-</html>
+
+</HTML>
